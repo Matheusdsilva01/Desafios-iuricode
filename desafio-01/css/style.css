@@ -1,0 +1,76 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: 'Lexend Deca', sans-serif;;
+}
+body{
+
+    background-color: #F3F5F7;
+}
+body>*{
+    padding: 40px;
+}
+header{
+    background: linear-gradient(88.27deg, #574AE8 0%, #3EA1DB 100%);
+    color: #ffffff;
+    margin-bottom: 100px;
+}
+header>nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+header input[type=text]{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    color: #ffffff;
+    background-image: url('../assets/search.svg') ;
+    background-repeat: no-repeat;
+    background-position: 10px 15px;
+    background-color: #FFFFFF33;
+    padding: 15px 10px 15px 40px;
+    font-size: 16px;
+}
+header input::placeholder{
+    color: #FFFFFF;
+}
+main > section {
+    background-color: #FFFFFF;
+    box-shadow: 0 0 10px #13131f0d;
+    padding: 25px;
+    margin-bottom: 50px;
+}
+main > section .date-fav{
+    display: flex;
+    justify-content: space-between;
+    color: #717171;
+    font-size: 18px;
+    margin-bottom: 22px;
+}
+main > section .contents > h2{
+    font-size: 26px;
+    margin-bottom: 8px;
+}
+main > section .contents> p{
+    font-size: 16px;
+    color: #717171;
+}
+
+@media screen and (max-width: 545px){
+    body>*{
+        padding: 20px;
+    }
+    main > section .date-fav{
+        font-size: 14px;
+    }
+    main > section .contents> p{
+        font-size: 14px;
+    }
+    main > section .contents > h2{
+        font-size: 18px;
+    }
+}
